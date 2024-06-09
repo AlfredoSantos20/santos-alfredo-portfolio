@@ -30,7 +30,7 @@ const Work = () => {
             variants={fadeIn('right', 0.4)}
             initial='hidden'
             animate='show'
-            exit='hidden'className="mb-4 max-w-[400px] mx-auto lg:mx-0">I'm passionate about creating efficient, scalable, and user-friendly applications. Each of these projects showcases my dedication to continuous learning and my commitment to excellence in web development. I'm looking forward to discussing how my skills and experiences can contribute to our collaboration.</motion.p>
+            exit='hidden'className="mb-4 max-w-[400px] mx-auto lg:mx-0">I&apos;m passionate about creating efficient, scalable, and user-friendly applications. Each of these projects showcases my dedication to continuous learning and my commitment to excellence in web development. I'm looking forward to discussing how my skills and experiences can contribute to our collaboration.</motion.p>
             </div>
             {/* Slider */}
             <motion.div  
