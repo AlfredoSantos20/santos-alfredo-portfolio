@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs, SiMysql, SiFirebase, SiAdobexd, SiAdobephotoshop, SiLaravel, SiJquery, SiMongodb, SiPhp, SiBootstrap, SiTailwindcss,
+  SiNextdotjs, SiMysql, SiFirebase, SiAdobexd,  SiLaravel, SiJquery, SiMongodb, SiPhp, SiBootstrap, SiTailwindcss,
 } from "react-icons/si";
 
 //  my  data
@@ -41,55 +41,40 @@ const aboutData = [
         icons: [
           <FaFigma key="figma" />, 
           <SiAdobexd key="adobexd" />, 
-          <SiAdobephotoshop key="photoshop" />
+          
         ],
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+  
   {
     title: 'experience',
     info: [
+     
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Intern - NEUST-MGT',
+        stage: 'jan 2024 - May 2024',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'certificates',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Digital Video Animation Software as Tools in Marketing and e-Commerce',  
+        stage: '2022',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Internet Media and Information Literacy Training',
+        stage: '2022',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Decrypting Cyber Threat: Empowering Individuals and Organizations',
+        stage: '2024',
+      },
+      {
+        title: 'Filipino Web Development Peers Monthly community day',
+        stage: '2024',
       },
     ],
   },
@@ -167,7 +152,7 @@ const About = () => {
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={50} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
                   Satisfied Clients
@@ -176,7 +161,7 @@ const About = () => {
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={100} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
                   Finished projects
@@ -185,7 +170,7 @@ const About = () => {
               {/* certificates */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={4} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
                   Certificates

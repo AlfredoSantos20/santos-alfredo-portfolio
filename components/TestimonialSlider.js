@@ -2,24 +2,24 @@
 const testimonialSlider = [
   {
     image: '/t-avt-1.png',
-    name: 'Anne Smith',
+    name: 'Kimberly Mae Kho',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Thankyou po sa tulong sir, thesis defended napo!',
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Doe',
+    name: 'Ezralyn Puno',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Salamat sa pag edit ng napakagandang picture grabe!!!',
   },
   {
     image: '/t-avt-3.png',
-    name: 'Jhon Doe',
+    name: 'John Paulo Battung',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Supper thankyouu po sainyoo sa pag tulong at patience nyo po samin!',
   },
 ];
 
