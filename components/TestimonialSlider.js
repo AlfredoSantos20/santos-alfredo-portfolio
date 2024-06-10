@@ -1,18 +1,20 @@
 // testimonial data
 const testimonialSlider = [
+
   {
-    image: '/t-avt-1.png',
+    image: '/t-avt-2.png',
     name: 'Kimberly Mae Kho',
     position: 'Customer',
     message:
       'Thankyou po sa tulong sir, thesis defended napo!',
   },
   {
-    image: '/t-avt-2.png',
+    image: '/t-avt-1.png',
     name: 'Ezralyn Puno',
     position: 'Customer',
     message:
       'Salamat sa pag edit ng napakagandang picture grabe!!!',
+      
   },
   {
     image: '/t-avt-3.png',
@@ -69,7 +71,7 @@ const TestimonialSlider = () => {
                    {/* name */}
                    <div className='text-lg'>{person.name}</div>
                       {/* position */}
-                <div className='text-[12px] uppercase font-extralight tracking-widest'>{person.name}</div>
+                <div className='text-[12px] uppercase font-extralight tracking-widest'>{person.position}</div>
               </div>
             </div>
                {/* quote & message*/}

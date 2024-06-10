@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 // icons
 import {
   FaHtml5,
@@ -53,7 +52,7 @@ const aboutData = [
      
       {
         title: 'Intern - NEUST-MGT',
-        stage: 'jan 2024 - May 2024',
+        stage: 'Jan 2024 - May 2024',
       },
     ],
   },
@@ -97,7 +96,6 @@ const About = () => {
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
-      {/* avatar img */}
       <motion.div
         variants={fadeIn('right', 0.6)}
         initial='hidden'
@@ -105,7 +103,6 @@ const About = () => {
         exit='hidden'
         className='hidden xl:flex absolute bottom-0 -left-[370px]'
       >
-        {/* <Avatar/> */}
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
@@ -137,7 +134,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='hidden md:flex nd:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+            className='hidden md:flex max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
           >
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
@@ -145,7 +142,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={4} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Years of experience
                 </div>
               </div>
@@ -154,7 +151,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Satisfied Clients
                 </div>
               </div>
@@ -163,7 +160,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Finished projects
                 </div>
               </div>
@@ -172,7 +169,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={4} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leadning-[1x4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Certificates
                 </div>
               </div>
@@ -180,20 +177,20 @@ const About = () => {
           </motion.div>
         </div>
         {/* info */}
-        <motion.section
+        <motion.div
           variants={fadeIn('right', 0.6)}
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-auto'
+          className='flex flex-col w-full xl:max-w-[48%] h-[480px] xl:h-auto overflow-y-auto'
         >
-          <div className='flex flex-col gap-y-4 xl:gap-y-6'>
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 ${
                   index === itemIndex
-                    ? 'text-accent after:w-[30%] after:bg-accent after:transition-all after:duration-300'
+                    ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                     : ''
                 }`}
                 onClick={() => setIndex(itemIndex)}
@@ -209,7 +206,7 @@ const About = () => {
                 className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
               >
                 {/* title */}
-                <div className='font-light mg-2 md:mb-0'> {item.title}</div>
+                <div className='font-light mb-2 md:mb-0'> {item.title}</div>
                 <div className='hidden md:flex'>-</div>
                 <div>{item.stage}</div>
                 <div className='flex gap-x-4'>
@@ -223,11 +220,10 @@ const About = () => {
               </div>
             ))}
           </div>
-        </motion.section>
+        </motion.div>
       </div>
     </div>
   );
 };
 
 export default About;
-
