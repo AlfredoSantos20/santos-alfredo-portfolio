@@ -180,20 +180,20 @@ const About = () => {
           </motion.div>
         </div>
         {/* info */}
-        <motion.div
+        <motion.section
           variants={fadeIn('right', 0.6)}
           initial='hidden'
           animate='show'
           exit='hidden'
           className='flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-auto'
         >
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+          <div className='flex flex-col gap-y-4 xl:gap-y-6'>
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 ${
                   index === itemIndex
-                    ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                    ? 'text-accent after:w-[30%] after:bg-accent after:transition-all after:duration-300'
                     : ''
                 }`}
                 onClick={() => setIndex(itemIndex)}
@@ -223,10 +223,11 @@ const About = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.section>
       </div>
     </div>
   );
 };
 
 export default About;
+
