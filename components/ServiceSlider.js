@@ -25,12 +25,12 @@ const serviceData = [
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Figma, Canva, React js, Next js, Tailwind css, Bootstrap',
+    description: 'Bootstrap, Canva, React js, Tailwind css',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Laravel, Php, MongoDb, Firebase, Mysql, Node Js',
+    description: 'Laravel, Php, MongoDb, Mysql',
   },
   {
     icon: <RxReader />,
