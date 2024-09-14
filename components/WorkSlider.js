@@ -45,6 +45,19 @@ const workSlider = {
       },
      ],
     },
+    {
+      images: [
+      {
+        title: 'STATIC CAR E-SHOP',
+        path: '/carshop1.png',
+      },
+      {
+        title: 'STATIC CAR E-SHOP',
+        path: '/carshop2.png',
+       
+      },
+     ],
+    },
   ],
 };
 
