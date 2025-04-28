@@ -23,15 +23,17 @@ import {FreeMode, Pagination } from 'swiper';
 const serviceData = [
   
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Bootstrap, Canva, React js, Tailwind css',
-  },
-  {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Laravel, Php, MongoDb, Mysql',
+    description: 'Laravel, Nest Js, Python, JavaScript, TypeScript, Php',
   },
+  
+  {
+    icon: <RxPencil2 />,
+    title: 'Design',
+    description: 'Bootstrap, Canva, React js, Tailwind css, Html, Css',
+  },
+
   {
     icon: <RxReader />,
     title: 'Documentation',

@@ -8,10 +8,11 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs, SiMysql, SiFirebase, SiAdobexd,  SiLaravel, SiJquery, SiMongodb, SiPhp, SiBootstrap, SiTailwindcss,
-  SiPostgresql, SiStrapi, SiNestjs, SiFlutter
+  SiNextdotjs, SiMysql, SiFirebase, SiAdobexd, SiLaravel, SiJquery, SiMongodb, SiPhp, SiBootstrap, SiTailwindcss,
+  SiPostgresql, SiStrapi, SiNestjs, SiFlutter, SiPython
 } from "react-icons/si";
 
+// Data
 const aboutData = [
   {
     title: 'skills',
@@ -19,30 +20,71 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <SiBootstrap key="bootstrap" />,
-          <SiTailwindcss key="tailwind" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiMysql key="mysql" />,
-          <SiFirebase key="firebase" />,
-          <SiLaravel key="laravel" />,
-          <SiJquery key="jquery" />,
-          <SiMongodb key="mongodb" />,
-          <SiPhp key="php" />,
-          <SiPostgresql key="postgresql" />,
-          <SiStrapi key="strapi" />,
-          <SiNestjs key="nestjs" />,
-          <SiFlutter key="flutter" />,
+          <div className="group relative" key="html5">
+            <FaHtml5 className="group-hover:text-[#E34F26] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="css3">
+            <FaCss3 className="group-hover:text-[#1572B6] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="bootstrap">
+            <SiBootstrap className="group-hover:text-[#563D7C] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="tailwind">
+            <SiTailwindcss className="group-hover:text-[#06B6D4] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="js">
+            <FaJs className="group-hover:text-[#F7DF1E] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="react">
+            <FaReact className="group-hover:text-[#61DAFB] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="nextjs">
+            <SiNextdotjs className="group-hover:text-[#000000] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="mysql">
+            <SiMysql className="group-hover:text-[#4479A1] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="firebase">
+            <SiFirebase className="group-hover:text-[#FFCB2F] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="laravel">
+            <SiLaravel className="group-hover:text-[#FF2D20] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="jquery">
+            <SiJquery className="group-hover:text-[#0769AD] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="mongodb">
+            <SiMongodb className="group-hover:text-[#47A248] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="php">
+            <SiPhp className="group-hover:text-[#777BB4] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="postgresql">
+            <SiPostgresql className="group-hover:text-[#336791] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="strapi">
+            <SiStrapi className="group-hover:text-[#2F2F2F] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="nestjs">
+            <SiNestjs className="group-hover:text-[#E0234E] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="flutter">
+            <SiFlutter className="group-hover:text-[#02569B] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="python">
+            <SiPython className="group-hover:text-[#3776AB] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
         ],
       },
       {
         title: 'UI/UX Design',
         icons: [
-          <FaFigma key="figma" />, 
-          <SiAdobexd key="adobexd" />, 
+          <div className="group relative" key="figma">
+            <FaFigma className="group-hover:text-[#F24E1E] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
+          <div className="group relative" key="adobexd">
+            <SiAdobexd className="group-hover:text-[#FF61F6] transition-all duration-300 transform group-hover:scale-110" />
+          </div>,
         ],
       },
     ],
@@ -55,13 +97,21 @@ const aboutData = [
         title: 'Intern - NEUST-MGT',
         stage: 'Jan 2024 - May 2024',
       },
+      {
+        title: 'Software Developer - QUANTUM METAL GT',
+        stage: 'Nov 2024 - 2025',
+      },
+      {
+        title: 'Software Developer - GO8',
+        stage: '2025 - Present',
+      },
     ],
   },
   {
     title: 'certificates',
     info: [
       {
-        title: 'Digital Video Animation Software as Tools in Marketing and e-Commerce',  
+        title: 'Digital Video Animation Software as Tools in Marketing and e-Commerce',
         stage: '2022',
       },
       {
@@ -88,6 +138,10 @@ import CountUp from 'react-countup';
 
 const About = () => {
   const [index, setIndex] = useState(0);
+
+  const startYear = 2021;
+  const currentYear = new Date().getFullYear();
+  const yearsExperience = currentYear - startYear;
 
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
@@ -118,10 +172,8 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            4 years ago, as a first-year college student I began freelancing as a developer creating projects like case studies, websites, 
+            {yearsExperience} years ago, as a first-year college student I began freelancing as a developer creating projects like case studies, websites, 
             and more. Since then, my passion for coding and design has grown exponentially. 
-            {/* I&apos;ve had the privilege of working with a variety of clients, each presenting unique 
-            challenges and opportunities that have honed my skills and expanded my knowledge. */}
           </motion.p>
           <motion.div
             variants={fadeIn('up', 0.6)}
@@ -133,9 +185,9 @@ const About = () => {
             <div className='flex flex-1 xl:gap-x-6'>
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={4} duration={5} /> +
+                  <CountUp start={0} end={yearsExperience} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                   Years of experience
                 </div>
               </div>
@@ -143,7 +195,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                   Satisfied Clients
                 </div>
               </div>
@@ -151,7 +203,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                   Finished projects
                 </div>
               </div>
@@ -159,7 +211,7 @@ const About = () => {
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={4} duration={5} /> +
                 </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]' >
                   Certificates
                 </div>
               </div>
@@ -197,10 +249,14 @@ const About = () => {
                 <div className='font-light mb-2 md:mb-0'> {item.title}</div>
                 <div className='hidden md:flex'>-</div>
                 <div>{item.stage}</div>
-                <div className='flex gap-x-4'>
+                <div className='flex flex-wrap gap-x-4 gap-y-2'>
                   {item.icons?.map((icon, iconIndex) => (
-                    <div key={iconIndex} className='text-2xl text-white'>
+                    <div
+                      key={iconIndex}
+                      className='text-2xl text-white group relative cursor-pointer'
+                    >
                       {icon}
+                      <div className='absolute inset-0 bg-gradient-to-l from-transparent to-transparent opacity-0 group-hover:opacity-80 transition-all duration-300'></div>
                     </div>
                   ))}
                 </div>

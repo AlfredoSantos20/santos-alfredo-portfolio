@@ -1,7 +1,5 @@
-//next image
 import Image from 'next/image';
 
-// Data
 const workSlider = {
   slides: [
     {
@@ -10,13 +8,6 @@ const workSlider = {
           title: 'NEUST-MGT E-SHOPPING',
           path: '/pics5.png',
         },
-        
-        {
-          title: 'NEUST-MGT E-SHOPPING',
-          path: '/pics2.png',
-        },
-        
-        
       ],
     },
     {
@@ -25,55 +16,32 @@ const workSlider = {
           title: 'TURKISHAN TRAVELS',
           path: '/pics6.png',
         },
-        {
-          title: 'TURKISHAN TRAVELS',
-          path: '/pics7.png',
-        },
-        
       ],
-      
     },
     {
       images: [
-      {
-        title: 'LIBRARY MANAGEMENT SYSTEM',
-        path: '/library3.png',
-      },
-      {
-        title: 'LIBRARY MANAGEMENT SYSTEM',
-        path: '/library4.png',
-      },
-     ],
+        {
+          title: 'LIBRARY MANAGEMENT SYSTEM',
+          path: '/library3.png',
+        },
+      ],
     },
     {
       images: [
-      {
-        title: 'STATIC CAR E-SHOP',
-        path: '/carshop1.png',
-      },
-      {
-        title: 'STATIC CAR E-SHOP',
-        path: '/carshop2.png',
-       
-      },
-     ],
+        {
+          title: 'STATIC CAR E-SHOP',
+          path: '/carshop1.png',
+        },
+      ],
     },
   ],
 };
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-
-// Import required modules
 import { Pagination } from 'swiper';
-
-
-// Icons
 import { BsArrowRight } from 'react-icons/bs';
 
 const WorkSlider = () => {
@@ -84,35 +52,32 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px] "
+      className="h-[280px] sm:h-[480px]"
     >
       {workSlider.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-3 cursor-pointer'>
+            <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
               {slide.images.map((image, index) => {
                 return (
-                  <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index} >
-                    <div className='flex items-center justify-center relative overflow-hidden'>
-                      {/* image */}
-                      <Image src={image.path} width={500}height={300} alt='' />
-
-                      {/* overlay gradient */}
-                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-red-900 to-red-800 opacity-0 group-hover:opacity-80 transition-all duration-700'>
-                      </div>
-                        {/* title */}
-                        <div className='absolute bottom-0 translate-y-full 
-                        group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                          <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                          {/* title part 1 */}
-                      
-                          {/* title part 2 */}
-                          <div className='translate-y-[500%]
-                          group-hover:translate-y-0 transition-all duration-300 delay-150'>{image.title}</div>
-                          {/* icon */}
-                          <div className='text-xl translate-y-[500%]
-                          group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight/></div>
-                          </div>
+                  <div className='flex items-center justify-center relative overflow-hidden' key={index}>
+                    {/* Apply rounded corners */}
+                    <Image 
+                      src={image.path} 
+                      width={500} 
+                      height={300} 
+                      alt='' 
+                      className="rounded-lg"  // Added rounded-lg class
+                    />
+                    <div className='absolute inset-0 bg-gradient-to-l from-transparent via-red-900 to-red-800 opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                    <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                      <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                        <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                          {image.title}
+                        </div>
+                        <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                          <BsArrowRight />
+                        </div>
                       </div>
                     </div>
                   </div>

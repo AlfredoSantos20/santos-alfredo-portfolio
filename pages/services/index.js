@@ -33,9 +33,7 @@ const Services = () => {
               className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-base lg:text-lg'
             >
               As a dedicated developer and designer, I offer a range of services
-              tailored to meet your digital needs. With a strong foundation in
-              both development and design, my goal is to deliver exceptional
-              results that help you achieve your business objectives. Here’s a
+              tailored to meet your digital needs. Here’s a
               glimpse into what I can do for you.
             </motion.p>
           </div>
