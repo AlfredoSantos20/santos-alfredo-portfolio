@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className='h-full bg-primary/30 pt-20'> {/* <-- Added pt-20 here */}
+    <div className='h-full bg-primary/30 pt-20'> 
       <div className='container mx-auto py-32 text-center xl:text-left flex 
       items-center justify-center h-full'>
         {/* text & form */}
